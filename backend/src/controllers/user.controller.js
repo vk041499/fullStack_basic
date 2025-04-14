@@ -30,6 +30,7 @@ const registerUser = asyncHandler(async (req, res) => {
     const { firstName,lastName, email, password, phone, address, city,
             state, country, zipCode1 } = req.body;
 
+
     // Check if the request contains Profile Picture
     const profilePictureLocalPath = req.files?.profilePicture[0]?.path;
 
